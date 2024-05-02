@@ -1,0 +1,38 @@
+@use 'helpers.scss';
+@use './mixinsVarMap';
+
+.services {
+    &Header {
+        margin-bottom: 30px;
+        &Link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 1px;
+            color: mixinsVarMap.$itemsTitleColor;
+
+            &Vector {
+            width: 12px; height: 12px;
+                &Red {
+                    display: none;
+                }
+        }
+        }
+            &Title {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 36px;
+                background-image: mixinsVarMap.$gradientRedText;
+                color: transparent;
+                background-clip: text;
+                margin-top: 10px;
+
+            }
+    }
+}
+
+.servicesHeaderLink:hover .servicesHeaderLinkVectorBlue {display: none;} 
+.servicesHeaderLink:hover .servicesHeaderLinkVectorRed {display: inline;}
+.servicesHeaderLink:hover {color: mixinsVarMap.$hoverColor}

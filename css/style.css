@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.wrapper {
+  width: 375px;
+  margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+  .wrapper {
+    width: 315px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    width: 648px;
+  }
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    width: 904px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    width: 1320px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    width: 1760px;
+  }
+}
+@media (min-width: 1920px) {
+  .partner {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.servicesHeader {
+  margin-bottom: 30px;
+}
+.servicesHeaderLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #24A3FF;
+}
+.servicesHeaderLinkVector {
+  width: 12px;
+  height: 12px;
+}
+.servicesHeaderLinkVectorRed {
+  display: none;
+}
+.servicesHeaderTitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  color: transparent;
+  background-clip: text;
+  margin-top: 10px;
+}
+
+.servicesHeaderLink:hover .servicesHeaderLinkVectorBlue {
+  display: none;
+}
+
+.servicesHeaderLink:hover .servicesHeaderLinkVectorRed {
+  display: inline;
+}
+
+.servicesHeaderLink:hover {
+  color: #F0145A;
+}
+
+.services {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0 0 12px 12px;
+  padding: 0 0 60px 0;
+}
+.servicesBlock {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 30px;
+}
+.servicesBlockItem {
+  display: flex;
+}
+.servicesBlockItemImage {
+  background-color: #FFFFFF;
+  padding: 14px;
+  border-radius: 24px;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 30px;
+}
+.servicesBlockItemTitle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #24A3FF;
+  margin-bottom: 15px;
+}
+.servicesBlockItemDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .servicesBlock {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .servicesBlock {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .servicesBlock {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .servicesBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+.partnerHeader {
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  margin-bottom: 30px;
+}
+.partnerHeaderTitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+
+.partner {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.partnerPartners {
+  height: 120px;
+  position: relative;
+}
+
+.hillel {
+  background-color: #1C4280;
+}
+
+.wannabiz {
+  background-color: #143646;
+}
+
+.tappegrine {
+  background-color: #F48B30;
+}
+
+.dlook {
+  background-color: #9E4DC3;
+}
+
+.orangear {
+  background-color: #FD9339;
+}
+
+.adtelligent {
+  background-color: #E2E2E4;
+}
+
+.clicky {
+  background-color: #C71C36;
+}
+
+.ecoLeasing {
+  background-color: #DCF3F9;
+}
+
+.cityPar {
+  background-color: #282240;
+}
+
+.infratek {
+  background-color: #EAEAEA;
+}
+
+.artprint {
+  background-color: #1D4568;
+}
+
+.ultimatecard {
+  background-color: #000000;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .partnerPartners:nth-child(n+7) {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .partner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .partner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .partner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1920px) {
+  .partner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

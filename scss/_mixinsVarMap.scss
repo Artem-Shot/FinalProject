@@ -1,0 +1,110 @@
+@use 'sass:map';
+
+// mixins
+@mixin mx {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin itemTitleFontColor {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $itemsTitleColor;
+    margin-bottom: 15px;
+}
+
+@mixin itemDescriptionFontColor {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+@mixin itemImage {
+    background-color: #FFFFFF;
+    padding: 14px;
+    border-radius: 24px;
+    width: 92px;
+    height: 92px;
+    margin-bottom: 30px;
+}
+@mixin pa {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+// map
+$brakepoint: (
+    mobile: 375px,
+    tabletSd:768px,
+    tabketHd: 1024px,
+    desktopSD: 1440px,
+    desktopHD: 1920px,
+);
+
+// media for services
+@media(min-width: map-get($brakepoint, "mobile")) { 
+    .wrapper{
+        width: calc(map-get($brakepoint, "mobile") - 60px);
+    } 
+}
+
+
+@media(min-width: map-get($brakepoint, "tabletSd")) { 
+    .wrapper{
+        width: calc(map-get($brakepoint, "tabletSd") - 120px);
+    } 
+}
+@media(min-width: map-get($brakepoint, "tabketHd")) { 
+    .wrapper{
+        width: calc(map-get($brakepoint, "tabketHd") - 120px);
+    } 
+}
+@media(min-width: map-get($brakepoint, "desktopSD")) { 
+    .wrapper{
+        width: calc(map-get($brakepoint, "desktopSD") - 120px);
+    } 
+}
+@media(min-width: map-get($brakepoint, "desktopHD")) { 
+    .wrapper{
+        width: calc(map-get($brakepoint, "desktopHD") - 160px);
+    } 
+}
+
+
+@media(min-width: map-get($brakepoint, "desktopHD")) { 
+    .partner{
+       padding-left: 100px;
+       padding-right: 100px;
+    } 
+}
+
+@mixin gradientRedText {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
+
+
+
+$hoverColor:#F0145A;
+$gradientRedText: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+// variables
+$mainColor: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$itemsTitleColor: #24A3FF;
+
+// partnerscollor
+
+$hillelcolor: #1C4280;
+$wannabizcolor: #143646;
+$tappegrinecolor: #F48B30;
+$dlookcolor:  #9E4DC3;
+$orangearcolor:#FD9339;
+$adtelligentcolor: #E2E2E4;
+$clickycolor: #C71C36;
+$ecoLeasingcolor: #DCF3F9;
+$cityParcolor: #282240;
+$infratekcolor: #EAEAEA;
+$artprintcolor: #1D4568;
+$ultimatecardcolor: #000000;

@@ -1,0 +1,59 @@
+@use 'helpers.scss';
+@use './mixinsVarMap';
+@use 'sass:map';
+
+.services {
+    background: mixinsVarMap.$mainColor;
+    border-radius: 0 0 12px 12px;
+    padding: 0 0 60px 0;
+    
+    &Block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        gap: 30px;
+
+        &Item {
+            display: flex;
+                &Image {
+                    @include mixinsVarMap.itemImage;
+                }
+                &Title {
+                    @include mixinsVarMap.itemTitleFontColor;
+                }
+                    &Description {
+                        @include mixinsVarMap.itemDescriptionFontColor;
+                    }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .servicesBlock {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+}
+@media (min-width: 1024px) {
+    .servicesBlock {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .servicesBlock {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+@media (min-width: 1920px) {
+    .servicesBlock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+ 
+

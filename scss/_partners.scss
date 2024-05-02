@@ -1,0 +1,99 @@
+@use 'helpers.scss';
+@use './mixinsVarMap';
+@use 'sass:map';
+
+
+.partnerHeader {
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    margin-bottom: 30px;
+
+    &Title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+    }
+}
+
+.partner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+     &Partners {
+        height: 120px;
+        position: relative;
+        
+     }
+}
+
+.hillel {
+    background-color: mixinsVarMap.$hillelcolor;
+}
+.wannabiz {
+    background-color: mixinsVarMap.$wannabizcolor ;
+}
+.tappegrine {background-color: mixinsVarMap.$tappegrinecolor;
+}
+.dlook {background-color: mixinsVarMap.$dlookcolor;
+}
+.orangear {
+    background-color: mixinsVarMap.$orangearcolor;
+}
+.adtelligent {
+    background-color: mixinsVarMap.$adtelligentcolor;
+}
+.clicky {
+    background-color: mixinsVarMap.$clickycolor;
+}
+.ecoLeasing {
+    background-color: mixinsVarMap.$ecoLeasingcolor;
+}
+.cityPar {
+    background-color: mixinsVarMap.$cityParcolor;
+}
+.infratek {
+    background-color: mixinsVarMap.$infratekcolor;
+}
+.artprint {
+    background-color: mixinsVarMap.$artprintcolor;
+}
+.ultimatecard {
+    background-color: mixinsVarMap.$ultimatecardcolor;
+}
+
+.logo {
+    @include mixinsVarMap.pa;
+}
+
+@media (max-width: 768px) {
+    .partnerPartners:nth-child(n+7) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .partner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .partner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .partner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1920px) {
+    .partner {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
