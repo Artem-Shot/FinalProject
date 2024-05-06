@@ -38,48 +38,39 @@
 // map
 $brakepoint: (
     mobile: 375px,
-    tabletSd:768px,
+    tabletSd: 768px,
     tabketHd: 1024px,
     desktopSD: 1440px,
     desktopHD: 1920px,
 );
 
 // media for services
-@media(min-width: map-get($brakepoint, "mobile")) { 
-    .wrapper{
-        width: calc(map-get($brakepoint, "mobile") - 60px);
-    } 
-}
+
 
 
 @media(min-width: map-get($brakepoint, "tabletSd")) { 
     .wrapper{
-        width: calc(map-get($brakepoint, "tabletSd") - 120px);
+        padding-left: 60px;
+        padding-right: 60px;
     } 
 }
-@media(min-width: map-get($brakepoint, "tabketHd")) { 
-    .wrapper{
-        width: calc(map-get($brakepoint, "tabketHd") - 120px);
-    } 
-}
-@media(min-width: map-get($brakepoint, "desktopSD")) { 
-    .wrapper{
-        width: calc(map-get($brakepoint, "desktopSD") - 120px);
-    } 
-}
+// @media(min-width: map-get($brakepoint, "tabketHd")) { 
+//     .wrapper{
+//         width: calc(map-get($brakepoint, "tabketHd") - 120px);
+//     } 
+// }
+// @media(min-width: map-get($brakepoint, "desktopSD")) { 
+//     .wrapper{
+//         width: calc(map-get($brakepoint, "desktopSD") - 120px);
+//     } 
+// }
 @media(min-width: map-get($brakepoint, "desktopHD")) { 
     .wrapper{
-        width: calc(map-get($brakepoint, "desktopHD") - 160px);
+        width: calc(map-get($brakepoint, "desktopHD") - 320px);
     } 
 }
 
 
-@media(min-width: map-get($brakepoint, "desktopHD")) { 
-    .partner{
-       padding-left: 100px;
-       padding-right: 100px;
-    } 
-}
 
 @mixin gradientRedText {
     background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);

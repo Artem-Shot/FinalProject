@@ -61,39 +61,20 @@ body {
 }
 
 .wrapper {
-  width: 375px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-@media (min-width: 375px) {
-  .wrapper {
-    width: 315px;
-  }
-}
 @media (min-width: 768px) {
   .wrapper {
-    width: 648px;
-  }
-}
-@media (min-width: 1024px) {
-  .wrapper {
-    width: 904px;
-  }
-}
-@media (min-width: 1440px) {
-  .wrapper {
-    width: 1320px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 1920px) {
   .wrapper {
-    width: 1760px;
-  }
-}
-@media (min-width: 1920px) {
-  .partner {
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 1600px;
   }
 }
 .servicesHeader {
@@ -179,7 +160,7 @@ body {
     gap: 60px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: ) {
   .servicesBlock {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -193,7 +174,6 @@ body {
 }
 @media (min-width: 1920px) {
   .servicesBlock {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
   }
@@ -288,16 +268,6 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  .partner {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 1440px) {
-  .partner {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 1920px) {
   .partner {
     grid-template-columns: repeat(4, 1fr);
   }
