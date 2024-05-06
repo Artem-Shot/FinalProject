@@ -272,5 +272,89 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.publications {
+  background-color: #F5F5FA;
+  padding-top: 30px;
+}
+.publicationsBlock {
+  display: block;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+.publicationsBlock :nth-last-child(n) {
+  margin-bottom: 0px;
+}
+.publicationsBlockImage {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.publicationsBlockInfo {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.publicationsBlockTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #24A3FF;
+}
+.publicationsBlockDate {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+.publicationsBlockDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+
+.hr {
+  height: 4px;
+  background-color: #E6E6F0;
+}
+
+@media (min-width: 768px) {
+  .publicationsGroup {
+    display: grid;
+    gap: 30px;
+    grid-column: 1fr 1fr;
+  }
+  .publicationsGroup .publicationsBlock:nth-child(3) {
+    grid-column: 1/3;
+  }
+}
+@media (min-width: 1024px) {
+  .publicationsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .publicationsGroup .publicationsBlock:nth-child(3) {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 1440px) {
+  .publicationsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .publicationsGroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
