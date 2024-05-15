@@ -33,6 +33,11 @@
     }
 }
 
-.servicesHeaderLink:hover .servicesHeaderLinkVectorBlue {display: none;} 
-.servicesHeaderLink:hover .servicesHeaderLinkVectorRed {display: inline;}
-.servicesHeaderLink:hover {color: mixinsVarMap.$hoverColor}
+.servicesHeaderLink:hover {color: mixinsVarMap.$hoverColor
+   
+}
+.servicesHeaderLink:hover {
+    .arrow path {
+        stroke: mixinsVarMap.$hoverColor;
+    }
+}

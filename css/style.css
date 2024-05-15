@@ -106,22 +106,19 @@ body {
   margin-top: 10px;
 }
 
-.servicesHeaderLink:hover .servicesHeaderLinkVectorBlue {
-  display: none;
-}
-
-.servicesHeaderLink:hover .servicesHeaderLinkVectorRed {
-  display: inline;
-}
-
 .servicesHeaderLink:hover {
   color: #F0145A;
+}
+
+.servicesHeaderLink:hover .arrow path {
+  stroke: #F0145A;
 }
 
 .services {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
   padding: 0 0 60px 0;
+  margin-bottom: 60px;
 }
 .servicesBlock {
   display: grid;
@@ -272,6 +269,15 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+@media (min-width: 1920px) {
+  .partner {
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+}
 .publications {
   background-color: #F5F5FA;
   padding-top: 30px;
@@ -354,6 +360,59 @@ body {
   .publicationsGroup {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+}
+.slider {
+  margin-bottom: 60px;
+}
+.sliderFrame {
+  border-radius: 12px;
+  overflow-x: hidden;
+}
+.sliderFrameImage {
+  width: 100%;
+  object-fit: cover;
+}
+.sliderDescription {
+  background-color: #F5F5FA;
+  padding: 30px;
+  border-radius: 0 0 12px 12px;
+  text-align: left;
+}
+.sliderDescriptionBottomTitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #B3B3BA;
+  margin-bottom: 6px;
+}
+.sliderDescriptionBottom p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+
+.pagination {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.paginationCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(36, 163, 255, 0.2);
+}
+.paginationCircleActive {
+  background-color: #24A3FF;
+}
+
+@media (min-width: 1024px) {
+  .sliderFrame {
+    display: flex;
   }
 }
 

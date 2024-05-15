@@ -1,8 +1,60 @@
-.slider {
-    background-color: red($color: #000000);
-    color: #000000;
-    font-size: 12px;
+@use 'helpers.scss';
+@use './mixinsVarMap';
+@use 'sass:map';
 
-    &Image {}
+.slider {
     
+    margin-bottom: 60px;
+    &Frame {
+        border-radius: 12px;
+        overflow-x: hidden;
+        &Image {
+            width: 100%;
+            object-fit: cover;
+            
+        }
+    }
+    &Description {
+        background-color: #F5F5FA;
+        padding: 30px;
+        border-radius: 0 0 12px 12px;
+        text-align: left;
+        &Bottom {
+            &Title {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+                color: #B3B3BA;
+                margin-bottom: 6px;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #B3B3BA;
+            }
+        }
+    }
 }
+.pagination {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    &Circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        text-align: center;
+        background-color:  rgba(36, 163, 255, 0.2);
+        &Active {
+            background-color: #24A3FF;
+        }
+    }
+
+}
+    @media (min-width: 1024px) {
+        .sliderFrame {
+            display: flex;
+        }
+    }

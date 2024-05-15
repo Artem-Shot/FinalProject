@@ -6,6 +6,7 @@
     background: mixinsVarMap.$mainColor;
     border-radius: 0 0 12px 12px;
     padding: 0 0 60px 0;
+    margin-bottom: 60px;
     
     &Block {
         display: grid;
@@ -27,6 +28,7 @@
         }
     }
 }
+
 
 
 @media (min-width: map.get(mixinsVarMap.$brakepoint, "tabletSd")) {

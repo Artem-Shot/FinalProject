@@ -69,6 +69,7 @@
     @include mixinsVarMap.pa;
 }
 
+
 @media (max-width: 768px) {
     .partnerPartners:nth-child(n+7) {
         display: none;
@@ -84,6 +85,16 @@
 @media (min-width: 1024px) {
     .partner {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1920px) {
+    .partner {
+        border-radius: 12px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 60px;
+        overflow: hidden;
     }
 }
 
