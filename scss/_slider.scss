@@ -7,10 +7,10 @@
     margin-bottom: 60px;
     &Frame {
         border-radius: 12px;
-        overflow-x: hidden;
+        overflow: hidden;
         &Image {
             width: 100%;
-            object-fit: cover;
+           display: block;
             
         }
     }
