@@ -1,0 +1,102 @@
+@use 'helpers.scss';
+@use './mixinsVarMap';
+
+.footer {
+    padding: 30px;
+    background-color: #F5F5FA;
+    
+    &Hr {
+        margin-bottom: 30px;
+ }
+ &Frame {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &Contacts {
+        margin-bottom: 50px;
+        &Adress {
+            margin-bottom: 21px;
+            &Street {
+                margin-bottom: 10px;
+                font-size: 16px;
+                line-height: 19px;
+                color: #323264;
+            }
+            &Location {
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14px;
+                letter-spacing: 1px;
+                color: #24A3FF;
+                text-transform: uppercase;
+
+            }
+        }
+            &Mail {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &Phone {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    color: #46466E;
+                    white-space: nowrap; 
+                }
+                &Mail {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19px;
+                    color: #24A3FF;
+
+                }
+            }
+            &Copiright {
+                font-size: 16px;
+                line-height: 19.5px;
+                color: #B3B3BA;
+                
+            }
+            &Circle {
+                height: 6px;
+                width: 6px;
+                border-radius: 50%;
+                text-align: center;
+                background-color:  #B3B3BA;
+                display: none;
+            }
+    }
+}
+    
+}
+
+@media (min-width: 768px) {
+    .footerFrame {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    .footerFrameContactsCopiright {
+        text-align: right;
+    }
+    .footerFrameContactsMail {
+        flex-direction: row;
+        align-items: center;
+    }
+    .footerFrameContactsCircle {
+        display: inline-block;
+        align-self: auto;
+    }
+    .footerFrameContactsAdress {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+       
+    }
+}

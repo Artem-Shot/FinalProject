@@ -12,7 +12,6 @@
         gap: 30px;
         border-radius: 8px;
         background-color: #FFFFFF;
-        margin-bottom: 30px;
         
         :nth-last-child(n) {
             margin-bottom: 0px;
@@ -69,7 +68,7 @@
     .publicationsGroup {
         display: grid;
         gap: 30px;
-        grid-column: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     .publicationsBlock:nth-child(3) {
         grid-column: 1 / 3;
     }
@@ -87,13 +86,6 @@
 }
 
 @media (min-width: 1440px) {
-    .publicationsGroup {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
- 
-    }
-}
-@media (min-width: 1920px) {
     .publicationsGroup {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;

@@ -1,0 +1,114 @@
+@use 'helpers.scss';
+@use './mixinsVarMap';
+@use 'sass:map';
+
+
+.expirience {
+    background: mixinsVarMap.$mainColor;
+    padding-bottom: 30px;
+  
+
+    &Nav {
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        overflow: auto;
+        padding-right: 30px;
+        padding-left: 30px;
+    
+
+        &Link {
+            
+            margin-left: 0;
+            color: #B3B3BA;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 36px;
+            text-decoration: none;
+        }
+
+        &Scroll {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    }
+    
+    &Description {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+        &H2 {
+            padding-bottom: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+        &Text {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+    .hrDiv {
+        overflow: hidden;
+        margin-left: 30px; 
+        margin-right: 30px;
+    }
+}
+.experienceHr {
+    height: 4px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+   
+
+}
+
+   .expirienceNavLinkActive {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        color: transparent;
+        background-clip: text;
+   }
+   .expirienceNavLink:hover {
+        background: #F0145A;
+        color: transparent;
+        background-clip: text;
+   }
+  
+   @media (min-width: 1024px) {
+    .expirience {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+ 
+
+    .expirienceNavScroll {
+        flex-direction: column;
+        align-items: end;
+    }
+    .expirienceNav {
+        overflow: visible;
+        justify-content: end;
+        padding-right: 0;
+  }
+  .experienceHr {
+    transform: rotate(-90deg);
+    translate: (0 180px);
+  }
+  
+    .expirienceDescription {
+        margin-left: 0;
+    }
+    .hrDiv {
+        margin-left: 0; 
+        margin-right: 0;
+    }
+}
+
